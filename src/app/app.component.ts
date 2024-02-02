@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProductComponent } from './Components/product/product.component';
 import { Store } from './DataTypes/product';
-import { ProductListService } from './Components/Services/product-list.service';
+import { ProductListService } from './Services/product-list.service';
 // import {  } from "module";
 @Component({
   selector: 'app-root',

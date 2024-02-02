@@ -16,7 +16,12 @@ angular is a single page put on the index.html file
 -----we will work on main.ts file remove bootstrapApplication and make it dynamic using module crite file app.module.ts in the app file make export
 ----all the code in angular will be class to use it as a component we wii use @Component we use on of the desgin pattern called ---Decorator Pattern--- search-- all of them is class What makes it special? the @Component  
 --we will make import in file app.module.ts by write @NgModule enter and it generate automatically 
---any conponant must have 5 thing 1-it's parent app.module.ts 2-it's name i mean it's selector 3-ui the html 4- it's function find in .ts (js)5-css
+--any conponant must have 5 thing 1-it's parent app.module.ts 2-it's name i mean it's selector 3-ui the html 4- it's function find in .ts (js) 4-html 5-css
+--how to make aroute 1-write it in imports array in the 
+app.module.ts 2-write its dinamic route in app.componant.html 
+<router-outlet></router-outlet> it change dynamically depends on your route
+3- write your pathes in app.routes.ts
+////////////////////////////////////////
 
 # Lab1Angular
 

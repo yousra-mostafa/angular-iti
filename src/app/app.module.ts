@@ -7,6 +7,10 @@ import { FooterComponent } from './Components/Footer/Footer.component';
 import { ProductComponent } from './Components/product/product.component';
 import { FormsModule } from "@angular/forms";
 import { RateComponent } from "./Components/rate/rate.component";
+import { RouterModule } from "@angular/router";
+import { routes } from "./app.routes";
+import { LoginComponent } from "./Components/login/login.component";
+import { RegisterComponent } from "./Components/register/register.component";
 
 
 @NgModule({
@@ -15,11 +19,14 @@ import { RateComponent } from "./Components/rate/rate.component";
     NavComponent,
     FooterComponent,
     ProductComponent,
-    RateComponent
+    RateComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes),
   ],
   bootstrap: [AppComponent]//start componant we can change it put don't
   // forget to change the componant name <app-root></app-root> to new name
