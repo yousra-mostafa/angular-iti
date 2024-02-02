@@ -1,3 +1,43 @@
 <p>
-  product works!
+  storeP works!
 </p>
+<h1 class="bg-success">{{storeP.storeName}}</h1>
+
+  <!-- property binding [] -->
+  <img [src]="storeP.storeLogo" id="logo" alt="">
+  <label for="clientName">Enter Your Name:</label>
+  <!-- banana inbox -->
+<input [(ngModel)]="storeP.clientName" id="clientName" placeholder="Your Name">
+<!-- {{}} interpulation it show thing in html from ts -->
+<h2>{{storeP.clientName}}</h2>
+
+  <div class="dropdown mb-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      categories
+    </button>
+    <ul class="dropdown-menu">
+      <li *ngFor="let item of storeP.categoryList"><a class="dropdown-item" href="#">{{item.name}}</a></li>
+      <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+    </ul>
+  </div>
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col" *ngFor="let item of storeP.productList ">
+    <div class="card">
+
+      <img [src]="item.img" class="card-img-top" [alt]="item.name">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.price}}</p>
+        <a href="#" class="btn btn-primary">add to card</a>
+        <app-rate [val]="3"></app-rate>
+      </div>
+    </div>
+  </div>
+
+</div>

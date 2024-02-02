@@ -1,0 +1,8 @@
+.card-img, .card-img-top {
+  height: 270px;
+}
+#logo{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+}

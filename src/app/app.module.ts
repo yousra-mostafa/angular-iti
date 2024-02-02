@@ -6,20 +6,22 @@ import { NavComponent } from './Components/Nav/Nav.component';
 import { FooterComponent } from './Components/Footer/Footer.component';
 import { ProductComponent } from './Components/product/product.component';
 import { FormsModule } from "@angular/forms";
+import { RateComponent } from "./Components/rate/rate.component";
 
 
 @NgModule({
-  declarations:[		//child declarations
+  declarations: [		//child declarations
     AppComponent, //need browsermodule to show on browser
-      NavComponent,
-      FooterComponent,
-      ProductComponent
-   ],
-  imports:[
+    NavComponent,
+    FooterComponent,
+    ProductComponent,
+    RateComponent
+  ],
+  imports: [
     BrowserModule,
     FormsModule
   ],
-  bootstrap:[AppComponent]//start componant we can change it put don't
+  bootstrap: [AppComponent]//start componant we can change it put don't
   // forget to change the componant name <app-root></app-root> to new name
   // <app-home>
 
@@ -27,7 +29,6 @@ import { FormsModule } from "@angular/forms";
 })
 
 
-export class AppModule
-{
+export class AppModule {
 
 }
