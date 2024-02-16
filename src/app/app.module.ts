@@ -11,7 +11,7 @@ import { RouterModule } from "@angular/router";
 import { routes } from "./app.routes";
 import { LoginComponent } from "./Components/login/login.component";
 import { RegisterComponent } from "./Components/register/register.component";
-
+import {ProductDetailsComponent} from "./Components/product-details/product-details.component"
 
 @NgModule({
   declarations: [		//child declarations
@@ -21,7 +21,8 @@ import { RegisterComponent } from "./Components/register/register.component";
     ProductComponent,
     RateComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

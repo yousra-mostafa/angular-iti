@@ -1,4 +1,5 @@
 interface IProduct {
+  ID: string;
   name: string;
   price: number;
   img: string;
@@ -10,6 +11,7 @@ interface ICategory {
 
 
 export class Store{
+  ID:string;
   storeName: string;
   storeLogo: string;
   productList: IProduct[];
@@ -18,6 +20,7 @@ export class Store{
   rate: number;
 
   constructor(
+    id:string,
     storeName: string,
     storeLogo: string,
     productList: IProduct[],
@@ -25,6 +28,7 @@ export class Store{
     clientName: string,
     rate: number
   ) {
+    this.ID= id;
     this.storeName = storeName;
     this.storeLogo = storeLogo;
     this.productList = productList;

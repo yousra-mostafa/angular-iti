@@ -16,7 +16,9 @@
       categories
     </button>
     <ul class="dropdown-menu">
-      <li *ngFor="let item of storeP.categoryList"><a class="dropdown-item" href="#">{{item.name}}</a></li>
+      <li *ngFor="let item of storeP.categoryList">
+        <a class="dropdown-item" href="#">{{item.name}}</a>
+      </li>
       <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li> -->
     </ul>
@@ -36,6 +38,8 @@
         <p class="card-text">{{item.price}}</p>
         <a href="#" class="btn btn-primary">add to card</a>
         <app-rate [val]="3"></app-rate>
+        <!-- route is array becase we send two segmant  -->
+        <button [routerLink]="['/details', item.ID]">See More</button>
       </div>
     </div>
   </div>

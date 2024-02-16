@@ -4,6 +4,7 @@ import { RegisterComponent } from './Components/register/register.component';
 import { ProductComponent } from './Components/product/product.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/About/About.component';
+import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 
 export const routes: Routes = [
   {path:"",redirectTo:"products",pathMatch:"full"},
@@ -12,6 +13,8 @@ export const routes: Routes = [
   {path:'products',component:ProductComponent},
   {path:'home',component:HomeComponent},
   {path:'about', component:AboutComponent},
+  {path:"details/:id",component:ProductDetailsComponent},
+
   {path:"**", redirectTo: "home",pathMatch:"full"} //if path not found
 
 
